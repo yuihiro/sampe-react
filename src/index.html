@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/pace/1.0.2/themes/black/pace-theme-minimal.css">
+
+    <link rel="stylesheet" href="/css/bundle.css">
+    <script type="text/javascript" src="/js/bundle.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+            <nav >
+                <ul>
+                    <li><a href="#/'">Home</a></li>
+                    <li><a href="#/test'">Test</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main">
+        </div>
+    </div>
+
+<!--
+<script type="text/javascript">
+    $(function () {
+        console.log("ready");
+        app.run('#/');
+    });
+
+    var app = $.sammy('#main', function () {
+        console.log("sammy");
+        //this.use('Mustache');
+        // define a 'route'
+        this.use(Sammy.Template);
+        this.get('#/', function (context) {
+            // load some data
+            app.context = this;
+            this.load('test.html', function() {
+                console.log("로드");
+            })
+                    //.renderEach('post.mustache')
+                    // swap the DOM with the new content
+                    .swap();
+        });
+        this.get('#/test', function (context) {
+            // load some data
+            app.context = this;
+            this.load('woobin.html')
+                    //.renderEach('post.mustache')
+                    // swap the DOM with the new content
+                    .swap();
+        });
+    });
+
+</script>
+-->
+
+</body>
+</html>

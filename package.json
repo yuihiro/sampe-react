@@ -1,0 +1,15 @@
+{
+  "name": "app-drawer-template",
+  "version": "0.0.1",
+  "author": "The Polymer Authors",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js --content-base dist/"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+  }
+}

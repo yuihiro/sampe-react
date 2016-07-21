@@ -1,0 +1,54 @@
+<div id="test_view">
+    <span id="test">
+        123123123
+    </span>
+
+    <button id="btn">버튼</button>
+
+    <span>sadflasdjflasjdfldsj</span>
+
+    <div id="woobin"/>
+</div>
+
+<script id="entry-template" type="text/x-handlebars-template">
+    <div class="entry">
+        <h1>{{title}}</h1>
+        <div class="body">
+            {{body}}
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript">
+    app.Test = {
+        name: "Test",
+        elem: {
+            todoapp: '#todoapp',
+            main: '#main',
+            footer: '#footer'
+        },
+
+        render: function() {
+            $('#test_view #test').text("하하");
+
+            var data = {};
+            var template = Handlebars.compile($("#entry-template").html());
+            var html = template({title: "My New Post", body: "This is my first post!"});
+            $('#woobin').html(html);
+        },
+
+        init: function() {
+            $('#test_view #btn').click(function (event) {
+                alert("이럴수가");
+            })
+        }
+    }
+    $(function () {
+        console.log("test");
+        app.Test.init();
+        app.Test.render();
+        console.log("test end");
+    });
+
+
+</script>
